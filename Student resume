@@ -1,0 +1,28 @@
+interface Resume 
+{ 
+void biodata(); 
+} 
+class Student implements Resume 
+{ 
+String name,discipline; 
+float result; 
+public void biodata() 
+{ 
+name="Rahul Sharma"; 
+result=9.8f; 
+discipline="Computer Science and Engineering"; 
+System.out.println(""); 
+System.out.println("Student Resume"); 
+System.out.println("Name : " +name); 
+System.out.println("Result : "+result+" cgpa"); 
+System.out.println("Discipline : "+discipline); 
+} 
+} 
+public class InterfaceP 
+{
+public static void main(String[] args) 
+{ 
+Student obj2=new Student(); 
+obj2.biodata(); 
+} 
+}
